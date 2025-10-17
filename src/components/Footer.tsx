@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-blue-900 text-white py-8 mt-12">
@@ -15,9 +17,15 @@ export default function Footer() {
         <div className="md:flex-1">
           <h3 className="text-lg font-semibold mb-3">Links Rápidos</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:underline">Início</a></li>
-            <li><a href="/carrinho" className="hover:underline">Carrinho</a></li>
-            <li><a href="/contato" className="hover:underline">Contato</a></li>
+            <li>
+              <Link href="/" className="hover:underline">Início</Link>
+            </li>
+            <li>
+              <Link href="/carrinho" className="hover:underline">Carrinho</Link>
+            </li>
+            <li>
+              <Link href="/contato" className="hover:underline">Contato</Link>
+            </li>
           </ul>
         </div>
 
